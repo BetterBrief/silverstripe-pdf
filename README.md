@@ -23,7 +23,8 @@ MyDataObject:
 
 ### Use it
 1. Author your template file called `MyDataObject_pdf.ss` in a suitable directory within your templates folder. Note that you can override this name if you wish to do so.
-2. Congratulations, you can now call `MyDataObject->generatePDF()` and get your PDF data.
+2. If this is a standalone file, you will need to include the base tag so assets are rendered correctly. In your template: `<% base_tag %>`
+3. Congratulations, you can now call `MyDataObject->generatePDF()` and get your PDF data.
    * If you wish to send the output to the browser, you'll need to set your response body to `generatePDF()`'s response, use `SS_HTTPResponse->addHeader('Content-Type', 'application/pdf')`.
    * To force a download, `SS_HTTPResponse->addHeader('Content-Disposition', 'attachment')`
 
