@@ -2,6 +2,7 @@
 	"name": "betterbrief/silverstripe-pdf",
 	"description": "Provide PDF renders of your webpages or objects using SSViewer, Snappy and wkhtmltopdf",
 	"keywords": ["silverstripe", "pdf"],
+	"type": "silverstripe-module",
 	"license": "BSD",
 	"version": "0.1",
 	"require": {
@@ -9,9 +10,12 @@
 		"knplabs/knp-snappy": "~0.2.0@stable"
 	},
 	"suggest": {
-		"h4cc/wkhtmltopdf-amd64": "Required wkhtmltopdf binary for Linux amd64 architectures",
-		"h4cc/wkhtmltopdf-i386": "Required wkhtmltopdf binary for Linux i386 architectures",
-		"messagedigital/wkhtmltoimage-osx": "Required wkhtml binary for OSX (why?!)"
+		"h4cc/wkhtmltopdf-amd64": "Required wkhtmltopdf binary for Linux amd64",
+		"h4cc/wkhtmltopdf-i386": "Required wkhtmltopdf binary for Linux i386",
+		"messagedigital/wkhtmltoimage-osx": "Required wkhtmltopdf binary for OSX"
+	},
+	"extra": {
+		"installer-name": "silverstripe-pdf"
 	},
 	"minimum-stability": "dev"
 }
