@@ -3,7 +3,7 @@
 	"description": "Provide PDF renders of your webpages or objects using SSViewer, Snappy and wkhtmltopdf",
 	"keywords": ["silverstripe", "pdf"],
 	"type": "silverstripe-module",
-	"license": "BSD",
+	"license": "BSD-3-Clause",
 	"version": "0.1",
 	"require": {
 		"php": ">=5.3.2",
